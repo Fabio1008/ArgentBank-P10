@@ -1,0 +1,84 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .main-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: #2c3e50;
+
+    i {
+      font-size: 1.2rem;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .main-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto; // pousse le bloc à droite
+}
+
+
+  .main-nav-name-fa-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    .main-nav-name {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .fa-user-circle {
+      font-size: 1.2rem;
+    }
+  }
+
+  .btn-logout {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    color: #2c3e50;
+
+    i {
+      font-size: 1.2rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    &:hover i {
+      transform: scale(1.1);
+      color: #e74c3c;
+    }
+  }
+  .btn-logout i {
+  color: #2c3e50; // ou une couleur contrastée
+}
+
+}
+
